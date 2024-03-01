@@ -1,33 +1,38 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import "./styles/colours.module.css";
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+.app {
+  display: flex;
+  flex-direction: column;
+  fill: var(--white-0);
+  
+  background-color: var(--white-0);
+  height: 100vh;
+  overflow: hidden;
+  font-family: "Oxygen", "Segoe UI", "Brandon Grotesque", "Ubuntu", sans-serif;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+html, body {
+  font-family: "Oxygen", "Segoe UI", "Brandon Grotesque", "Ubuntu", sans-serif;
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+
+@-webkit-keyframes gradient {
+  0%{background-position:38% 0%}
+  50%{background-position:63% 100%}
+  100%{background-position:38% 0%}
+}
+@keyframes gradient {
+  0%{background-position:38% 0%}
+  50%{background-position:63% 100%}
+  100%{background-position:38% 0%}
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+.content {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
 }

@@ -1,0 +1,43 @@
+.page {
+	color:var(--dark-grey-0);
+  margin-bottom: 10%;
+	margin-left: 10%;
+  position: absolute;
+	z-index: 9;
+	display: flex;
+  flex-direction: column;
+  width: 40%;
+}
+
+.categories {
+  display: flex;
+  flex-direction: row;
+}
+
+.category {
+  margin-right: 3rem;
+}
+
+.categoryTitle {
+  font-size: 2em;
+  font-weight: 500;
+  border-bottom: 3px solid var(--light-blue-0);
+  margin-bottom: 0.75em;
+}
+
+.item {
+  margin-bottom: 0.5em;
+}
+
+.title {
+	font-size: 3em;
+	font-weight: 500;
+	margin: 0;
+	margin-bottom: 0.5rem;
+}
+
+.body {
+	font-size: 1em;
+	margin-top: 16px;
+	font-weight: 400;
+}

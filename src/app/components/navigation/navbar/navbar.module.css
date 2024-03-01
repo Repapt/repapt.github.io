@@ -1,0 +1,35 @@
+.navbar {
+  width: full;
+  position: sticky;
+  top: 0;
+  height: 8%;
+  display: flex;
+  align-items: center;
+  z-index: 10;
+  justify-content: space-between;
+}
+
+.logoContainer {
+  width: 4em;
+  height: 4em;
+  position: absolute;
+  margin-left: 1em;
+  margin-top: 0.5em;
+}
+
+.links {
+  align-self: center;
+  height: 50%;
+  width: 50%;
+  margin-left: 50%;
+  list-style-type: none;
+  display: flex;
+}
+
+.link {
+  font-size: 1em;
+  height: 100%;
+  margin-left: 10%;
+  padding: 0 0.5em;
+  color: var(--blue-0);
+}
