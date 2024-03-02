@@ -24,8 +24,8 @@ export default function Home() {
         </div>
         <div className={styles.image}>
           <Image 
-          src="/res/about_photo.png" 
-          alt="spider"
+          src="/website/res/about_photo.png" 
+          alt=""
           fill={true}/>
         </div>
       </div>
