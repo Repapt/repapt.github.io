@@ -29,7 +29,7 @@ export const Navbar = (props: NavBarProps) => {
       <Link className={styles.logoContainer} href="/">
         <Image 
           className={styles.logo}
-          src="/res/logo_sl.svg" 
+          src="/website/res/logo_sl.svg" 
           alt="logo"
           fill={true}
           />

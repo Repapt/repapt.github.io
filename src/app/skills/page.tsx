@@ -6,7 +6,7 @@ import Image from "next/image";
 export default function Skills() {
   const heartWidth = 32;
   const fullHeartPath = "/website/res/heart_full.png";
-  const halfHeartPath = "/website/res/heart_full.png";
+  const halfHeartPath = "/website/res/heart_half.png";
   const emptyHeartPath = "/website/res/heart_empty.png";
 
   return (
