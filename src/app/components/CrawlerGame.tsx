@@ -19,6 +19,8 @@ type ObstacleInfo = {
 
 export const CrawlerGame = memo<CrawlerProps>((props) => {
   const { onGameStart } = props;
+
+  CrawlerGame.displayName = "CrawlerGame";
   
   const { width: windowWidth, height: windowHeight } = GetWindowDimensions();
 

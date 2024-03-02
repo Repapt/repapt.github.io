@@ -1,14 +1,16 @@
 "use client";
+import { useEffect, useMemo, useState } from "react";
 import "./../globals.css";
 import styles from './games.module.css'
-import Unity, { UnityContent } from "react-unity-webgl";
+import dynamic from "next/dynamic";
+
+const DynamicComponent = dynamic(
+  () => import("./GameContainer"),
+  {ssr: false}
+);
 
 export default function Games() {
   
-  const unityProvider = new UnityContent(
-    "Build/WebGL.json",
-    "Build/UnityLoader.js",
-  );
   return (
     <div className="content">
       <div className={styles.page}>
@@ -18,7 +20,7 @@ export default function Games() {
           <a className={styles.link} href="https://www.github.com/Repapt/FallenTemplar" target="_blank" rel="noopener noreferrer">Github</a>
         </p>
         <div className={styles.game}>
-          {typeof window !== "undefined" && <Unity unityContent={unityProvider}/>}
+          <DynamicComponent/>
         </div>
       </div>
     </div>

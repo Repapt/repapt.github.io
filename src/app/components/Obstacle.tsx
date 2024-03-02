@@ -55,6 +55,9 @@ export const ObstacleTypes = [
 
 export const Obstacle = memo<ObstacleProps>((props) => {
   const { type, scale, speed, tickSpeed, initialPos } = props;
+
+  Obstacle.displayName = "Obstacle";
+
   const [xPos, setXPos] = useState(initialPos);
 
   useEffect(() => {
@@ -65,7 +68,7 @@ export const Obstacle = memo<ObstacleProps>((props) => {
     return () => clearInterval(interval);
   }, [speed]);
 
-  const Obstacle = useMemo(() => {
+  const obstacleImage = useMemo(() => {
     const transform_style = {
       transform: `translate(${xPos}px, ${type.yPos}px)`
     }
@@ -83,7 +86,7 @@ export const Obstacle = memo<ObstacleProps>((props) => {
 
   return (
     <>
-    {Obstacle}
+    {obstacleImage}
     </>
   );
 });

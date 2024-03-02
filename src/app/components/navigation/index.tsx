@@ -8,9 +8,7 @@ const Navigation = () => {
     setIsOpen(!isOpen);
   };
   return (
-    <>
-      <Navbar/>
-    </>
+    <Navbar/>
   );
 };
 

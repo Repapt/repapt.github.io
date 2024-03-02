@@ -1,15 +1,19 @@
 "use client";
-import React from "react";
+import React, { HTMLAttributes } from "react";
 import Link from "next/link";
-import styles from './navbar.module.css'
-// @ts-ignore
+import styles from './navbar.module.css';
 import { usePathname } from "next/navigation";
 import Image from "next/image";
 
-export const Navbar = () => {
+export type NavBarProps = HTMLAttributes<HTMLDivElement> & {
+  pathName?: string
+}
+
+export const Navbar = (props: NavBarProps) => {
+  const { pathName } = props;
 
   const getStyle = (path: string) => {
-    if (path === usePathname()) {
+    if (path === "") {
       return {
         "color": "var(--light-blue-0)",
         "borderBottom": "3px solid var(--light-blue-0)",
