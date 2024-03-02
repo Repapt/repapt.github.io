@@ -3,6 +3,7 @@ import Link from "next/link";
 import Logo from "./Logo";
 import Button from "./Button";
 import styles from './navbar.module.css'
+// @ts-ignore
 import { usePathname } from "next/navigation";
 import Image from "next/image";
 

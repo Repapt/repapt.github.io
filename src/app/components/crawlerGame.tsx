@@ -10,7 +10,7 @@ export type CrawlerProps = HTMLAttributes<HTMLDivElement> & {
   onGameStart: () => void;
 };
 
-type obstacleInfo = {
+type ObstacleInfo = {
   key: number,
   scale: number,
   type: Animal,
@@ -41,8 +41,8 @@ export const CrawlerGame = memo<CrawlerProps>((props) => {
   const minObstacleScale = 2;
   
   let initialObstacle = {key: 0, scale: minObstacleScale, type: ObstacleTypes[0], xPos: 200};
-  const [obstaclesInfo, setObstaclesInfo] = useState<[obstacleInfo] | undefined>();
-  const newObstacle = useRef<obstacleInfo | undefined>();
+  const [obstaclesInfo, setObstaclesInfo] = useState<[ObstacleInfo] | undefined>();
+  const newObstacle = useRef<ObstacleInfo | undefined>();
 
   function getRandomAnimal() {
     const max = ObstacleTypes.length;
@@ -108,7 +108,7 @@ export const CrawlerGame = memo<CrawlerProps>((props) => {
       if (!obstaclesInfo) {
         setObstaclesInfo([newObstacle.current]);
       } else {
-        const oldInfo : [obstacleInfo] = obstaclesInfo;
+        const oldInfo : [ObstacleInfo] = obstaclesInfo;
         oldInfo.push(newObstacle.current);
         setObstaclesInfo([...oldInfo]);
       }
@@ -147,7 +147,7 @@ export const CrawlerGame = memo<CrawlerProps>((props) => {
   //obstacle will also check for collision every update, take player pos as prop
 
   //update obstacles
-  const obstacles = useMemo(() => {
+  const Obstacles = useMemo(() => {
     //console.log(obstaclesInfo.length);
     if (!obstaclesInfo) {
       return [];
@@ -170,7 +170,7 @@ export const CrawlerGame = memo<CrawlerProps>((props) => {
   return (
     <div className={styles.background}>
       {player}
-      {obstacles}
+      {Obstacles}
     </div>
   );
 });

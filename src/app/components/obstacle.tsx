@@ -65,7 +65,7 @@ export const Obstacle = memo<ObstacleProps>((props) => {
     return () => clearInterval(interval);
   }, [speed]);
 
-  const obstacle = useMemo(() => {
+  const Obstacle = useMemo(() => {
     const transform_style = {
       transform: `translate(${xPos}px, ${type.yPos}px)`
     }
@@ -83,7 +83,7 @@ export const Obstacle = memo<ObstacleProps>((props) => {
 
   return (
     <>
-    {obstacle}
+    {Obstacle}
     </>
   );
 });
