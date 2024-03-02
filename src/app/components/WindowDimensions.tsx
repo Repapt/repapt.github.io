@@ -6,7 +6,7 @@ type windowDimensions = {
   height: number | undefined;
 }
 
-export default function getWindowDimensions() {
+export default function GetWindowDimensions() {
   const windowExists = typeof window !== 'undefined';
   const [windowDimensions, setWindowDimensions] = useState<windowDimensions>({
     width: undefined,

@@ -2,8 +2,8 @@
 import Image from "next/image";
 import React, { useState, useEffect, useMemo, useRef, HTMLAttributes, memo } from 'react';
 import styles from './crawlerGame.module.css'
-import { Animal, Obstacle, obstacleTypes } from "./obstacle";
-import getWindowDimensions from "./WindowDimensions";
+import { Animal, Obstacle, ObstacleTypes } from "./obstacle";
+import GetWindowDimensions from "./WindowDimensions";
 import dynamic from "next/dynamic";
 
 export type CrawlerProps = HTMLAttributes<HTMLDivElement> & {
@@ -20,7 +20,7 @@ type obstacleInfo = {
 export const CrawlerGame = memo<CrawlerProps>((props) => {
   const { onGameStart } = props;
   
-  const { width: windowWidth, height: windowHeight } = getWindowDimensions();
+  const { width: windowWidth, height: windowHeight } = GetWindowDimensions();
 
   const [gameStarted, setGameStarted] = useState(false);
   const [yVal, setYVal] = useState(0);
@@ -40,13 +40,13 @@ export const CrawlerGame = memo<CrawlerProps>((props) => {
   
   const minObstacleScale = 2;
   
-  let initialObstacle = {key: 0, scale: minObstacleScale, type: obstacleTypes[0], xPos: 200};
+  let initialObstacle = {key: 0, scale: minObstacleScale, type: ObstacleTypes[0], xPos: 200};
   const [obstaclesInfo, setObstaclesInfo] = useState<[obstacleInfo] | undefined>();
   const newObstacle = useRef<obstacleInfo | undefined>();
 
   function getRandomAnimal() {
-    const max = obstacleTypes.length;
-    return obstacleTypes[Math.floor(Math.random() * max)];
+    const max = ObstacleTypes.length;
+    return ObstacleTypes[Math.floor(Math.random() * max)];
   }
 
   const floorVal = 100;

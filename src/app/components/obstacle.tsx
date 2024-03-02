@@ -20,7 +20,7 @@ export type ObstacleProps = HTMLAttributes<HTMLDivElement> & {
   windowWidth: number | undefined;
 }
 
-export const obstacleTypes = [
+export const ObstacleTypes = [
   {
     src: "/res/rhino.svg",
     width: 100,
