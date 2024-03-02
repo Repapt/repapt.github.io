@@ -1,21 +1,25 @@
+"use client";
 import "./../globals.css";
-import styles from './home.module.css'
+import styles from './games.module.css'
+import Unity, { UnityContent } from "react-unity-webgl";
 
-export default function Home() {
+export default function Games() {
+
+  const unityProvider = new UnityContent(
+    "Build/WebGL.json",
+    "Build/UnityLoader.js",
+  );
   return (
-    <div className="page">
-      <div className="text">
-        <h2>About me</h2>
-        <p className="body">
-          A reliable and independent critical thinker with an attention to detail, I first started programming by competing in various coding competitions.
-          Since then, I've branched out into web design, creating games, and whatever else piques my interest.
+    <div className="content">
+      <div className={styles.page}>
+        <h3 className={styles.title}>Fallen Templar</h3>
+        <p className={styles.description}>
+          {"A top-down Star Wars inspired shooter made with Unity - a downloadable version can be found on my "}          
+          <a className={styles.link} href="https://www.github.com/Repapt/FallenTemplar" target="_blank" rel="noopener noreferrer">Github</a>
         </p>
-        <p className="body">
-          I spend my free time on TV shows,
-          video games, swimming, cooking, and playing guitar. I'm a sucker for animated movies,
-          and I'm kind of a Marvel nerd.
-        </p>
-        <img className="profile" alt="Profile"></img>
+        <div className={styles.game}>
+          <Unity unityContent={unityProvider}/>
+        </div>
       </div>
     </div>
   );

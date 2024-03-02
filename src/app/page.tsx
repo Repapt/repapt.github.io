@@ -22,14 +22,14 @@ export default function Home() {
             <h1 className={styles.title}>Hi! I'm Samuel.</h1>
             <h3 className={styles.subtitle}>Current computer engineering student,</h3>
             <h3 className={styles.subtitle}>future professional game developer.</h3>
-            <h3 className={styles.body}> Currently seeking new opportunities to level up my career: <a href="mailto:samuelskliu@gmail.com">samuelskliu@gmail.com</a></h3>
+            <h3 className={styles.body}> Currently seeking new opportunities to level up my career: <a className={styles.link} href="mailto:samuelskliu@gmail.com">samuelskliu@gmail.com</a></h3>
             <a className={styles.button} href="/res/Samuel Liu Resume.pdf" target="_blank" rel="noopener noreferrer">Resume</a>
             <a className={styles.button} href="https://www.github.com/Repapt" target="_blank" rel="noopener noreferrer">Github</a>
           </div>
           <div className={styles.image}>
             <Image 
-            src="/res/spider.svg" 
-            alt="spider"
+            src="/res/home_photo.png" 
+            alt=""
             fill={true}/>
           </div>
         </div>

@@ -1,23 +1,54 @@
 .page {
-	color:var(--dark-grey-0);
   margin-bottom: 10%;
 	margin-left: 10%;
   position: absolute;
 	z-index: 9;
 	display: flex;
+  flex-direction: row;
+  width: 80%;
+}
+
+.writing {
+	color:var(--dark-grey-0);
+	width: 50%;
+	z-index: 9;
+	display: flex;
   flex-direction: column;
-  width: 40%;
 }
 
 .title {
 	font-size: 3em;
 	font-weight: 500;
 	margin: 0;
-	margin-bottom: 0.5rem;
+	margin-bottom: 0.5em;
+	align-self: start;
+	border-bottom: 3px solid var(--light-blue-0);
+	padding-right: 0.25em;
 }
 
 .body {
 	font-size: 1em;
 	margin-top: 16px;
 	font-weight: 400;
+}
+
+.link {
+	font-weight: bold;
+	border-bottom: 3px solid var(--light-blue-0);
+}
+
+.link:hover {
+  color: var(--light-blue-0)
+}
+
+.image {
+	position: relative;
+	height: 24em;
+	width: 24em;
+	align-self: center;
+	margin-left: 12em;
+	margin-top: 5em;
+	border-radius: 24em;
+	border: 0.25em solid var(--light-blue-0);
+	aspect-ratio: 1/1;
 }
