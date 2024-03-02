@@ -4,7 +4,7 @@ import styles from './games.module.css'
 import Unity, { UnityContent } from "react-unity-webgl";
 
 export default function Games() {
-
+  
   const unityProvider = new UnityContent(
     "Build/WebGL.json",
     "Build/UnityLoader.js",
@@ -18,7 +18,7 @@ export default function Games() {
           <a className={styles.link} href="https://www.github.com/Repapt/FallenTemplar" target="_blank" rel="noopener noreferrer">Github</a>
         </p>
         <div className={styles.game}>
-          <Unity unityContent={unityProvider}/>
+          {typeof window !== "undefined" && <Unity unityContent={unityProvider}/>}
         </div>
       </div>
     </div>
