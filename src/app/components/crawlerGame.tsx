@@ -2,7 +2,7 @@
 import Image from "next/image";
 import React, { useState, useEffect, useMemo, useRef, HTMLAttributes, memo } from 'react';
 import styles from './crawlerGame.module.css'
-import { Animal, Obstacle, ObstacleTypes } from "./obstacle";
+import { Animal, Obstacle, ObstacleTypes } from "./Obstacle";
 import GetWindowDimensions from "./WindowDimensions";
 import dynamic from "next/dynamic";
 

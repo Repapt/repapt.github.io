@@ -1,6 +1,6 @@
 "use client";
 import { useMemo, useState } from "react";
-import { CrawlerGame } from "./components/crawlerGame";
+import { CrawlerGame } from "./components/CrawlerGame";
 import "./globals.css";
 import styles from './home.module.css'
 import Image from "next/image";
