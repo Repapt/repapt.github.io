@@ -2,6 +2,10 @@
 const nextConfig = {
   output: 'export',
   basePath: '/website',
+  assetPrefix: '/website',
+  images: {
+    unoptimized: true
+  }
 };
 
 export default nextConfig;
