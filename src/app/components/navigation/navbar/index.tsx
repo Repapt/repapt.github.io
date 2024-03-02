@@ -1,14 +1,12 @@
 "use client";
 import React from "react";
 import Link from "next/link";
-import Logo from "./Logo";
-import Button from "./Button";
 import styles from './navbar.module.css'
 // @ts-ignore
 import { usePathname } from "next/navigation";
 import Image from "next/image";
 
-const Navbar = ({ toggle }: { toggle: () => void }) => {
+export const Navbar = () => {
 
   const getStyle = (path: string) => {
     if (path === usePathname()) {
@@ -49,5 +47,3 @@ const Navbar = ({ toggle }: { toggle: () => void }) => {
     </div>
   );
 };
-
-export default Navbar;
