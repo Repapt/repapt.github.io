@@ -2,6 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 @import "./styles/colours.module.css";
+@import "./styles/animations.module.css";
 
 .app {
   display: flex;
@@ -16,18 +17,6 @@
 
 html, body {
   font-family: "Oxygen", "Segoe UI", "Brandon Grotesque", "Ubuntu", sans-serif;
-}
-
-
-@-webkit-keyframes gradient {
-  0%{background-position:38% 0%}
-  50%{background-position:63% 100%}
-  100%{background-position:38% 0%}
-}
-@keyframes gradient {
-  0%{background-position:38% 0%}
-  50%{background-position:63% 100%}
-  100%{background-position:38% 0%}
 }
 
 .content {

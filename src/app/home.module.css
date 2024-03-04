@@ -6,6 +6,7 @@
   position: absolute;
 	z-index: 9;
 	display: flex;
+	animation: var(--fade-in-1);
 }
 
 .title {
@@ -53,6 +54,7 @@
 	margin-left: 7.5em;
 	margin-bottom: 2em;
 	flex-shrink: 0;
+	animation: var(--fade-in-1);
 }
 
 .link {
@@ -62,12 +64,4 @@
 
 .link:hover {
   color: var(--light-blue-0)
-}
-
-@keyframes fadeIn {
-	from {
-		opacity: 0;
-	} to {
-		opacity: 1;
-	}
 }
