@@ -1,13 +1,14 @@
 "use client";
+import { basePath } from "../DevEnv";
 import "./../globals.css";
 import styles from './skills.module.css'
 import Image from "next/image";
 
 export default function Skills() {
   const heartWidth = 32;
-  const fullHeartPath = "/website/res/heart_full.png";
-  const halfHeartPath = "/website/res/heart_half.png";
-  const emptyHeartPath = "/website/res/heart_empty.png";
+  const fullHeartPath = basePath + "/res/heart_full.png";
+  const halfHeartPath = basePath + "/res/heart_half.png";
+  const emptyHeartPath = basePath + "/res/heart_empty.png";
 
   return (
     <div className="content">

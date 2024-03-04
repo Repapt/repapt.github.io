@@ -4,6 +4,7 @@ import Link from "next/link";
 import styles from './navbar.module.css';
 import { usePathname } from "next/navigation";
 import Image from "next/image";
+import { basePath } from "@/app/DevEnv";
 
 export type NavBarProps = HTMLAttributes<HTMLDivElement> & {
   pathName?: string
@@ -29,7 +30,7 @@ export const Navbar = (props: NavBarProps) => {
       <Link className={styles.logoContainer} href="/">
         <Image 
           className={styles.logo}
-          src="/website/res/logo_sl.svg" 
+          src={basePath + "/res/logo_sl.svg" }
           alt="logo"
           fill={true}
           />

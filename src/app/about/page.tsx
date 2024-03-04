@@ -2,6 +2,7 @@ import "./../globals.css";
 import styles from './about.module.css'
 import Link from "next/link";
 import Image from "next/image";
+import { basePath } from "../DevEnv";
 
 export default function Home() {
   return (
@@ -24,7 +25,7 @@ export default function Home() {
         </div>
         <div className={styles.image}>
           <Image 
-          src="/website/res/about_photo.png" 
+          src={basePath + "/res/about_photo.png" }
           alt=""
           fill={true}/>
         </div>
