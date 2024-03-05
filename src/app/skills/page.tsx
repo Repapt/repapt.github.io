@@ -1,4 +1,5 @@
 "use client";
+import { usePathname } from "next/navigation";
 import { basePath } from "../DevEnv";
 import "./../globals.css";
 import styles from './skills.module.css'
@@ -9,6 +10,7 @@ export default function Skills() {
   const fullHeartPath = basePath + "/res/heart_full.png";
   const halfHeartPath = basePath + "/res/heart_half.png";
   const emptyHeartPath = basePath + "/res/heart_empty.png";
+  const path = usePathname();
 
   return (
     <div className="content">

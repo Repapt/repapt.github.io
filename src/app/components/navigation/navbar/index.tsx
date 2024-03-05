@@ -12,9 +12,10 @@ export type NavBarProps = HTMLAttributes<HTMLDivElement> & {
 
 export const Navbar = (props: NavBarProps) => {
   const { pathName } = props;
+  const currPath = usePathname();
 
   const getStyle = (path: string) => {
-    if (path === "") {
+    if (path === currPath) {
       return {
         "color": "var(--light-blue-0)",
         "borderBottom": "3px solid var(--light-blue-0)",
