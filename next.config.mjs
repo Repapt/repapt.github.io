@@ -4,8 +4,8 @@ const nextConfig = (
   process.env.node_ENV === "development" ?
   {} : {
     output: 'export',
-    basePath: '/website',
-    assetPrefix: '/website',
+    basePath: '/Personal-Site',
+    assetPrefix: '/Personal-Site',
     images: {
       unoptimized: true
     }
