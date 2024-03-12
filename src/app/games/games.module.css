@@ -12,6 +12,7 @@
   align-self: start;
   border-bottom: 3px solid var(--light-blue-0);
 	animation: var(--fade-in-1);
+  user-select: none;
 }
 
 .description {
@@ -20,6 +21,7 @@
 	font-weight: 500;
   margin-bottom: 1em;
 	animation: var(--fade-in-1);
+  user-select: none;
 }
 
 .link {
