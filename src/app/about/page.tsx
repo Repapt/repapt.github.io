@@ -12,7 +12,7 @@ export default function Home() {
           <h1 className={styles.title}>About me</h1>
           <h3 className={styles.body}> {"I'm passionate about video games and have been making games as a hobby since I was 15. I picked up Unity during my first year in university, and am now in the process of developing a top-down shooter in Unity called "}
           <Link className={styles.link} href="/games">Fallen Templar.</Link></h3>
-          <h3 className={styles.body}> Currently based in <strong>Waterloo ON</strong>, I&apos;m in the final year of my computer engineering program at the University of Waterloo.</h3>
+          <h3 className={styles.body}> I recently completed my computer engineering program at the University of Waterloo and am currently based in <strong>Toronto ON.</strong></h3>
           <h3 className={styles.body}> During my program, I completed three game programming internships. My most recent placement was at{" "}
           <a className={styles.link} href="https://www.digitalextremes.com/" target="_blank" rel="noopener noreferrer">Digital Extremes</a>
           , where I was an AI programmer working 
