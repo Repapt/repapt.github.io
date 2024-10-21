@@ -1,2 +1,2 @@
 export const isDevEnv = process.env.NODE_ENV === "development";
-export const basePath = isDevEnv ? "" : "/Personal-Site"
+export const basePath = isDevEnv ? "" : ""

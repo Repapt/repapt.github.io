@@ -18,7 +18,7 @@ export default function Home() {
           , where I was an AI programmer working 
           on AAA live service game Warframe.</h3>
           <h3 className={styles.body}> If I&apos;m not working on a game, I&apos;m usually playing one. My current favourites are 
-          Celeste, Hades, Teamfight Tactics, and Doom: Eternal. </h3>
+          Celeste, Hades, Teamfight Tactics, and Doom Eternal. </h3>
           <h3 className={styles.body}> Outside of games, I enjoy swimming, playing guitar, and falling off the wall at my local climbing gym.</h3>
           <h3 className={styles.body}> Please <strong>feel free to reach out</strong> {"if you've got an opening and think I'd be a good fit (or if you just want to chat)! "}
           <a className={styles.link} href="mailto:samuelskliu@gmail.com" target="_blank" rel="noopener noreferrer">samuelskliu@gmail.com</a></h3>
