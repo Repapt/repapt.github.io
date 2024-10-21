@@ -2,4 +2,4 @@
 
 A portfolio showcasing my skills, interests, and game development experience.
 
-Built with NextJS and React, deployed with Github Pages at https://Repapt.github.io/Personal-Site
+Built with NextJS and React, deployed with Github Pages at samuelliu.ca
