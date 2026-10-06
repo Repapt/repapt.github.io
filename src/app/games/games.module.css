@@ -46,18 +46,16 @@
 	animation: var(--fade-in-1);
 }
 
-
-
 .row {
   display: flex;
-  flex-direction: row;
-  justify-self: flex-end;
-  justify-content: space-evenly;
-  width: 90%;
+  flex-wrap: wrap;
+  gap: 48px;
+  justify-content:flex-start;
+  width: 80%;
 }
 
 .itchGame {
-  
+  display: inline-block;
 }
 
 .title {

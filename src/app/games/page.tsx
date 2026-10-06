@@ -31,6 +31,10 @@ export default function Games() {
             <iframe src="https://itch.io/embed/2777981?bg_color=FDFEFD&amp;fg_color=222222&amp;link_color=49a0be&amp;border_color=ddd" 
               width="552" height="167"><a href="https://notsamyul.itch.io/broken-bike-cyclethon">Broken Bike Cyclethon by notsamyul</a></iframe>
           </div>
+          <div className={styles.itchGame}>
+            <iframe src="https://itch.io/embed/3919551?bg_color=FDFEFD&amp;fg_color=222222&amp;link_color=49a0be&amp;border_color=ddd" 
+              width="552" height="167"><a href="https://notsamyul.itch.io/tome-of-friendship">Tome Of Friendship by notsamyul</a></iframe>
+          </div>
         </div>
         )}
       

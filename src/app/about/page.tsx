@@ -10,7 +10,7 @@ export default function Home() {
       <div className={styles.page}>
         <div className={styles.writing}>
           <h1 className={styles.title}>About me</h1>
-          <h3 className={styles.body}> I&apos;m passionate about all things gaming and have been pursuing a career in game development since I was 15.
+          <h3 className={styles.body}> I&apos;m passionate about all things gaming and have been pursuing a career in game development since I was a child.
           Today, I&apos;m a gameplay programmer at {" "}
           <strong>Digital Extremes</strong>
           , where I&apos;m working on bringing the whimsical world of {" "}
